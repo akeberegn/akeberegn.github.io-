@@ -3,55 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akoberegn | Vibe Coder & Trader</title>
-    <!-- Tailwind CSS for modern layout -->
+    <title>Ak Tech | Professional Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #050505; color: #d4af37; font-family: 'Inter', sans-serif; }
-        .card { background: #111; border: 1px solid #d4af37; border-radius: 15px; padding: 20px; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { background-color: #050505; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(18, 18, 18, 0.7); backdrop-filter: blur(20px); border: 1px solid #333; }
+        .text-gold { color: #c5a059; }
+        .border-gold { border-color: #c5a059; }
+        .hover-gold:hover { border-color: #c5a059; transform: translateY(-5px); transition: 0.3s; }
     </style>
 </head>
-<body class="p-4 md:p-10">
+<body class="p-4 md:p-8 flex items-center justify-center min-h-screen">
 
-    <div class="max-w-4xl mx-auto">
-        <!-- Header -->
-        <div class="text-center mb-10">
-            <h1 class="text-5xl font-bold text-white mb-2">Akoberegn</h1>
-            <p class="text-xl">Vibe Coder | Forex & Crypto Trader</p>
+    <div class="max-w-3xl w-full glass-card p-6 md:p-12 rounded-3xl border border-neutral-800 shadow-2xl">
+        
+        <div class="w-full h-56 bg-neutral-900 rounded-2xl mb-8 overflow-hidden border border-neutral-700 relative">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200&h=400" alt="Professional workspace" class="w-full h-full object-cover opacity-70">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/90 to-transparent"></div>
+            <div class="absolute bottom-4 left-6 flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-black/50 backdrop-blur-md border border-gold flex items-center justify-center">
+                    <span class="text-lg font-black text-gold">AK</span>
+                </div>
+            </div>
         </div>
 
-        <!-- About Section -->
-        <div class="card mb-6">
-            <h2 class="text-2xl font-bold text-white mb-4">✨ About Me</h2>
-            <p class="text-gray-300">I am a motivated learner and a dedicated trader. My journey combines the analytical precision of Forex and Crypto trading with the creative freedom of Vibe Coding. I am currently a student in the ETN Learn Vibe Coding 101 class, building my future in tech.</p>
+        <header class="text-left mb-10">
+            <h1 class="text-4xl font-extrabold text-gold tracking-tighter mb-2">Ak Tech</h1>
+            <p class="text-neutral-400 uppercase tracking-widest text-sm font-semibold">Vibe Coding Student | Electrical Expert | Trader</p>
+        </header>
+
+        <section class="text-left mb-12">
+            <p class="text-neutral-300 leading-relaxed max-w-2xl">
+                Based in Addis Ababa, I bridge the gap between physical craftsmanship and digital innovation. My daily life involves professional electrical work, but my vision is set on the future: using <strong>Vibe Coding</strong> to build functional tools that solve real-world problems in Ethiopia.
+            </p>
+            <p class="text-neutral-300 leading-relaxed max-w-2xl mt-4">
+                In the markets, I am a dedicated trader. Through my channel, I share deep insights into <strong>Trading Psychology</strong> and market discipline to help others grow. If you are interested in collaborating or following my journey, reach out to me below.
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+            <div class="p-5 rounded-2xl bg-neutral-900/50 border border-neutral-800 hover-gold">
+                <div class="text-gold text-xl mb-2">⚡</div>
+                <h3 class="font-bold text-white text-sm mb-1">Electrical</h3>
+                <p class="text-xs text-neutral-500">Commercial & Residential Systems.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-neutral-900/50 border border-neutral-800 hover-gold">
+                <div class="text-gold text-xl mb-2">💻</div>
+                <h3 class="font-bold text-white text-sm mb-1">Vibe Coding</h3>
+                <p class="text-xs text-neutral-500">Problem-solving for Ethiopia.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-neutral-900/50 border border-neutral-800 hover-gold">
+                <div class="text-gold text-xl mb-2">📈</div>
+                <h3 class="font-bold text-white text-sm mb-1">Trading</h3>
+                <p class="text-xs text-neutral-500">Psychology & Discipline.</p>
+            </div>
         </div>
 
-        <!-- Links Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a href="mailto:akeberegnaweke@gmail.com" class="card block text-center">
-                <span class="text-3xl block mb-2">📧</span>
-                <span class="font-bold text-white">Email Me</span>
-            </a>
-            <a href="https://twitter.com/AkeEtn" target="_blank" class="card block text-center">
-                <span class="text-3xl block mb-2">🐦</span>
-                <span class="font-bold text-white">Twitter: @AkeEtn</span>
-            </a>
-            <a href="https://t.me/Aki_gd" target="_blank" class="card block text-center">
-                <span class="text-3xl block mb-2">💬</span>
-                <span class="font-bold text-center text-white">Telegram: @Aki_gd</span>
-            </a>
-            <a href="https://t.me/AK_Trades_Official" target="_blank" class="card block text-center">
-                <span class="text-3xl block mb-2">📈</span>
-                <span class="font-bold text-white">Trading: @AK_Trades_Official</span>
-            </a>
+        <div class="flex flex-col gap-3">
+            <p class="text-neutral-500 text-xs mb-2">Connect with me on my platforms:</p>
+            <a href="https://t.me/Ak_Trades_Official" class="w-full py-3 bg-gold/10 border border-gold/30 text-gold hover:bg-gold hover:text-black rounded-xl transition text-center font-bold">Join My Trading Channel</a>
+            <div class="grid grid-cols-3 gap-3 text-center">
+                <a href="https://t.me/Aki_GD" class="py-2 border border-neutral-700 hover:border-gold hover:text-gold rounded-xl transition text-xs">Telegram</a>
+                <a href="https://x.com/AkeEtn" class="py-2 border border-neutral-700 hover:border-gold hover:text-gold rounded-xl transition text-xs">Twitter</a>
+                <a href="mailto:akeberegnaweke@gmail.com" class="py-2 border border-neutral-700 hover:border-gold hover:text-gold rounded-xl transition text-xs">Email</a>
+            </div>
         </div>
 
-        <!-- Footer -->
-        <div class="text-center mt-10 text-gray-500">
-            <p>© 2026 Akoberegn | Vibe Coding 101</p>
-        </div>
+        <footer class="text-center mt-12">
+            <p class="text-gold text-sm font-light italic">"Building the future, one line of code and one connection at a time."</p>
+        </footer>
     </div>
-
 </body>
 </html>
